@@ -1,7 +1,7 @@
 nome = input("Inserisci il nome del tuo personaggio: ")
 
 
-Introuduzione = ["\nINTRODUZIONE",
+introduzione = ["\nINTRODUZIONE",
                  "Ti trovi in volo sul tuo caccia interplanetario.",
                  "E'stato un lungo viaggio quello che ti ha portato fino a qui, sulla luna boscosa di Molok",
                  "Stai ammirando il panorama che ti circonda quando improvvisamente si accende la spia che segnala una comunicazione in ingresso;",
@@ -39,11 +39,15 @@ atto3 = ["il missile si avvicina pericolosamente al tuo velivolo.",
          "TO BE CONTINUED..."
          ]
 
-for i in range(len(Introuduzione)):
-  print(f"{Introuduzione[i]}")
+
+#intro
+for i in range(len(introduzione)):
+  print(f"{introduzione[i]}")
 
 risposta1 = input()
 
+
+#atto1
 if risposta1 == "1":
 
   for i in range(len(atto1)):
@@ -56,6 +60,7 @@ if risposta1 == "1":
   else:
     print("Dopo una valutazione attenta decidi di aumentare il livello di guardia ma di continuare sulla tua rotta.")
 
+#atto2
 for i in range(len(atto2)):
   print(f"{atto2[i]}")
 
@@ -64,5 +69,7 @@ if risposta3 == "1":
   print("Fiducioso nelle tue capacità di pilota militare decidi di tentare alcune manovre elusive")
   print("Nonostante i tuoi sforzi")
 
+
+#atto3
 for i in range(len(atto3)):
   print(f"{atto3[i]}")
